@@ -61,13 +61,15 @@ export class App {
   aplicarFiltros(filtros:any){
     let filtrados = [...this.todosPersonajes];
     if(filtros.name){
+      const nombre = filtros.name.trim().toLowerCase();
       filtrados = filtrados.filter (p=>
-        p.name.toLowerCase().includes(filtros.name.toLowerCase())
+        p.name.toLowerCase().includes(nombre)
       );
     }
     if(filtros.species){
+      const especies = filtros.species.trim().toLowerCase();
       filtrados = filtrados.filter (p=>
-        p.species.toLowerCase().includes(filtros.species.toLowerCase())
+        p.species.toLowerCase().includes(especies)
       );
     }
     this.personajesOriginal=filtrados;
