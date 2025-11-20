@@ -1,0 +1,19 @@
+<div class="container_totales">
+    <div class="container_Species">
+    <h3>Totales por Species</h3>
+    <ul>
+        <li *ngFor="let key of objectKeys(totalesSpecies)">
+        {{ key }}: {{ totalesSpecies[key] }}
+        </li>
+    </ul>
+</div>
+    <div class="container_Type">
+    <h3>Totales por Type</h3>
+    <ul>
+        <li *ngFor="let key of objectKeys(totalesType)">
+        {{ key }}: {{ totalesType[key] }}
+        </li>
+    </ul>
+    </div>
+</div>
+

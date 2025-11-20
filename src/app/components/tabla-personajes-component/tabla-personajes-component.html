@@ -1,0 +1,24 @@
+<div class="container_table">
+    <table >
+        <tr>
+            
+            <th>Name</th>
+            <th>Status</th>
+            <th>Species</th>
+            <th>Type</th>
+            <th>Gender</th>
+            <th>Created</th>
+        </tr>
+         <tr *ngFor="let p of personajes" (click)="seleccionar(p)" >
+            <td>{{p.name}}</td>
+            <td>{{p.status}}</td>
+            <td>{{p.species}}</td>
+            <td>{{p.type}}</td>
+            <td>{{p.gender}}</td>
+            <td>{{p.created}}</td>
+        </tr>
+        
+
+    </table>
+   
+</div>

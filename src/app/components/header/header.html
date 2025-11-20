@@ -1,0 +1,13 @@
+<div class="header">
+    <h1>Rick and Morty Characters</h1>
+    
+   
+</div>
+    <div class="datos">
+    <p> <strong>Programmer:</strong> Javier Alejandro Arroyo Mera</p>
+    </div>
+<div class="input">
+    <input type="text" placeholder="Buscar por nombre" class="input_nombre" (input)="onFilterChange('name',  $event.target.value)">
+
+    <input type="text" placeholder="Buscar por especie" class="input_especie" (input)="onFilterChange('species',$event.target.value)">
+</div>

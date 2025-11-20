@@ -1,0 +1,14 @@
+    <div *ngIf="personaje" class="detalle_box">
+        <h2>{{personaje.name}}</h2>
+        <img [src]="personaje.image" alt="imagen" class="img_personaje">
+        <p> <strong>Status:</strong> {{personaje.status}}</p>
+        <p> <strong>Species:</strong> {{personaje.species}}</p>
+        <p> <strong>Origen:</strong> {{personaje.origin.name}}</p>
+        <p> <strong>URL:</strong> {{personaje.origin.url ? personaje.origin.url : 'No posee URL'}}</p>
+        <p> <strong>localización:</strong> {{personaje.location?.name || 'Desconocido'}}</p>
+        <p > <strong>Residente de la misma locación:</strong> {{otroPersonaje.name}}</p>
+         <p > <strong>Episodio de aparición:</strong> {{primerEpisodio.name}}({{primerEpisodio.episode}})</p>
+
+
+    </div>
+

@@ -1,0 +1,30 @@
+.img_personaje{
+    width: 100px;
+    border-radius: 100px;
+
+}
+.detalle_box{
+background: #ffffff;
+padding: 20px;
+width: 450px;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+margin-left: 100px;
+margin-top: 5px;
+border: 1px solid black;
+ background-color:#01FF70 ;
+word-break: break-word;
+text-align: center;
+
+}
+h2{
+    margin-top: 0;
+    font-size: 20px;
+}
+p {
+font-size: 15px;
+}
