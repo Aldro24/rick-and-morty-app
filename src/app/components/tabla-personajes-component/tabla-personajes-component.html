@@ -1,6 +1,6 @@
 <div class="container_table">
     <table >
-        <tr>
+        <tr class="encabezados">
             
             <th>Name</th>
             <th>Status</th>
@@ -9,7 +9,7 @@
             <th>Gender</th>
             <th>Created</th>
         </tr>
-         <tr *ngFor="let p of personajes" (click)="seleccionar(p)" >
+         <tr *ngFor="let p of personajes" (click)="seleccionar(p)" class="tabla_informacion">
             <td>{{p.name}}</td>
             <td>{{p.status}}</td>
             <td>{{p.species}}</td>

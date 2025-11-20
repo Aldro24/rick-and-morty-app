@@ -1,9 +1,10 @@
+
+
 .contenedor{
     display: flex;
     gap:20px;
     align-items: flex-start;
     padding:20px;
-   
     width: 100%;
 }
 .container_tabla_personajes{
@@ -24,3 +25,4 @@ justify-content: center;
 .pagination{
     margin-left: 20px;
 }
+
